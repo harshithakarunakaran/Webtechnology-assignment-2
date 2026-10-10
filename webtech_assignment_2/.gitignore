@@ -1,0 +1,21 @@
+# IDE/build
+.idea/
+.vscode/
+*.iml
+target/
+*.class
+
+# Local secrets / environment
+.env
+config.local.php
+db.properties.local
+
+# Runtime uploads: do not commit student documents
+question2-php-admin/uploads/*
+!question2-php-admin/uploads/.gitkeep
+question3-servlet-portal/uploads/*
+!question3-servlet-portal/uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db

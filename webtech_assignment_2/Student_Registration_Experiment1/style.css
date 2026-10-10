@@ -1,0 +1,154 @@
+/* General page styling */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #2357d9;
+  --primary-dark: #1742ad;
+  --text: #1d2939;
+  --muted: #667085;
+  --border: #d0d5dd;
+  --danger: #c62828;
+  --success: #18794e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, #eaf0ff, #f7f9fc);
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 620px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(30, 55, 100, 0.12);
+}
+
+header {
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(25px, 5vw, 34px);
+}
+
+.subtitle, footer, .hint {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+label span {
+  color: var(--danger);
+}
+
+input, select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #fff;
+}
+
+input:focus, select:focus {
+  outline: 3px solid rgba(35, 87, 217, 0.15);
+  border-color: var(--primary);
+}
+
+input[type="file"] {
+  padding: 9px;
+}
+
+.error {
+  display: block;
+  color: var(--danger);
+  min-height: 0;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  min-height: 46px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+.message {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.message.success {
+  color: var(--success);
+}
+
+.message.failure {
+  color: var(--danger);
+}
+
+footer {
+  margin-top: 18px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 14px 10px;
+  }
+
+  .form-card {
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,17 @@
+:root { font-family: Arial, sans-serif; color: #172033; background: #f3f6fb; }
+* { box-sizing: border-box; } body { margin: 0; }
+.top { padding: 28px max(22px, calc((100% - 1160px)/2)); display:flex; justify-content:space-between; align-items:center; gap:20px; background:#fff; border-bottom:1px solid #e1e7f0; }
+h1 { margin:5px 0 18px; } .eyebrow { font-size:.75rem; letter-spacing:.12em; color:#3758b8; font-weight:700; }
+.wrap, .form-wrap { width:min(1160px, calc(100% - 32px)); margin:28px auto; }
+.form-wrap { max-width:760px; } .panel, .table-wrap { background:#fff; border:1px solid #e0e6ef; border-radius:14px; padding:22px; box-shadow:0 8px 25px #1b31500b; }
+.table-wrap { overflow-x:auto; padding:0; } table { width:100%; border-collapse:collapse; min-width:850px; }
+th, td { padding:14px 15px; text-align:left; border-bottom:1px solid #e8edf4; } th { background:#f8faff; }
+a { color:#2448a5; } .actions { white-space:nowrap; display:flex; gap:12px; align-items:center; }
+.actions form { display:inline; } .button, button { display:inline-block; background:#2448a5; color:#fff; padding:11px 15px; border:0; border-radius:8px; text-decoration:none; font:inherit; cursor:pointer; }
+.link { padding:0; background:none; color:#2448a5; text-decoration:underline; } .danger { color:#b42318; }
+label { display:block; font-weight:700; margin:17px 0; } input { display:block; width:100%; padding:11px; border:1px solid #cbd3e1; border-radius:8px; margin-top:7px; font:inherit; }
+.notice { padding:12px 15px; background:#e9f8ef; border-radius:8px; color:#12623c; }
+.error-box { padding:12px 15px; background:#fff0f0; border-radius:8px; color:#a21b1b; }
+.muted, small { color:#68758a; line-height:1.5; } .file-list { list-style:none; padding:0; }
+.file-list li { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:14px 0; border-bottom:1px solid #e8edf4; }
+@media(max-width:600px) { .top { align-items:flex-start; flex-direction:column; } .file-list li { align-items:flex-start; flex-direction:column; } }
